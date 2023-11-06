@@ -1,13 +1,17 @@
 
-main{
-    height: calc(100vh - 75px);
 
-}
 
 aside{
     background-color: #0E263C;
     color: white;
+    height: calc(100vh - 75px);
+
 }
+
+.my_main-page{
+    height: calc(100vh - 75px);
+}
+
 header{
     height: 75px;
 }
