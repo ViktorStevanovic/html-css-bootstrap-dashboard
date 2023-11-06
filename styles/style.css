@@ -1,15 +1,17 @@
 
 
 aside{
-    height: calc(100vh - 96px);
     background-color: #0E263C;
     color: white;
+    height: calc(100vh - 70px);
 }
-nav{
+header{
     height: 70px;
 }
-aside{
-    height: calc(100vh - 70px);
+
+
+.navbar-brand img{
+    max-height: 70px;
 }
 
 .my_searchbar{
@@ -24,4 +26,13 @@ aside{
 
 .my_searchbar i{
     margin-left: 12px;
+}
+
+.my_plan{
+    background-color: #165BBA;
+    color: white;
+    border: none;
+    border-radius: .75rem;
+    vertical-align: text-bottom;
+    padding: 0 10px;
 }

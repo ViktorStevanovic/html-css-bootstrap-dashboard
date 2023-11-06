@@ -14,40 +14,47 @@
 </head>
 <body>
     <header>
-        <nav class="navbar p-0">
-            <div class="container-fluid p-0">
-                <div class="col-1 d-lg-none">
-                    <a class="navbar-brand" href="#">
-                        <img src=".//img/mobile-logo.png" alt="Boolean mobile-logo" class="img-fluid">
-                    </a>
-                </div>
-                <div class="col-2 d-none d-lg-flex justify-content-center">
-                    <a class="navbar-brand" href="#">
-                        <img src="./img/logo.svg" alt="Boolean mobile-logo" class="img-fluid">
-                    </a>
-                </div>
-                
-                <div class="col-10 col-lg-8">
-                    <div class="my_searchbar d-flex justify-content-center align-items-center">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="text" class="form-control form-input" placeholder="Prova a cercare: Lezioni di Laravel">
-                    </div>
-                </div>
+        
+      <div class="container-fluid p-0">
+            <div class="row">
 
-                <div class="col-1 col-lg-2 d-flex justify-content-between px-3 gap-4">
-                    <i class="fa-solid fa-list d-none d-lg-flex"></i>
-                    <i class="fa-solid fa-circle-question d-none d-lg-flex"></i>
-                    <i class="fa-solid fa-ellipsis-vertical d-none d-lg-flex"></i>
-                    <i class="fa-solid fa-bell"></i>
-                </div>
-            </div>
-          </nav>
+                <nav class="navbar p-0">
+                        <div class="col-1 d-lg-none">
+                            <a class="navbar-brand" href="#">
+                                <img src=".//img/mobile-logo.png" alt="Boolean mobile-logo" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-2 d-none d-lg-flex justify-content-center">
+                            <a class="navbar-brand" href="#">
+                                <img src="./img/logo.svg" alt="Boolean mobile-logo" class="img-fluid">
+                            </a>
+                        </div>
+                        
+                        <div class="col-10 col-lg-8">
+                            <div class="my_searchbar d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" class="form-control form-input" placeholder="Prova a cercare: Lezioni di Laravel">
+                            </div>
+                        </div>
+        
+                        <div class="col-1 col-lg-2 d-flex justify-content-between px-3 gap-4">
+                            <i class="fa-solid fa-list d-none d-lg-flex"></i>
+                            <i class="fa-solid fa-circle-question d-none d-lg-flex"></i>
+                            <i class="fa-solid fa-ellipsis-vertical d-none d-lg-flex"></i>
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                </nav>       
+                    
+           </div>
+              
+         </div>
+          
     </header>
 
     <main>
-        <section class="container-fluid">
+        <section class="container-fluid p-0">
             <div class="row">
-                <aside class="col-1 col-lg-2 d-flex flex-column align-items-center justify-content-between pb-3 pt-4 fs-5">
+                <aside class="col-1 col-lg-2 d-flex flex-column align-items-center justify-content-between pb-3 pt-4 px-lg-0 px-xxl-3 fs-5">
                     <div class="my_top-aside d-flex flex-column gap-4 align-items-center">
                         <p class="m-0"><i class="fa-solid fa-house"></i><span class="ms-3 d-none d-lg-inline">Home</span></p>
                         <p class="m-0"><i class="fa-solid fa-chart-simple"></i><span class="ms-3 d-none d-lg-inline">Stats</span></p>
@@ -58,7 +65,25 @@
                     </div>
                 </aside>
 
-                <section class="col-11">
+                <section class="col-11 col-lg-10 p-0">
+                   
+                        <div class="col-12 bg-primary p-2 text-light">
+                            <div class="col-12 col-md-4 col-lg-8">
+                                <h1 class="d-inline">Boolean</h1> <button class="my_plan">Piano blaze</button>
+                                <div class="plans_container">
+                                    <button class="my_plan ">3 app</button>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <button class="my_plan d-lg-none">+</button>
+                                    <button class="my_plan d-none d-lg-inline">Boolean mobile app</button>
+                                    <button class="my_plan d-none d-lg-inline">Boolean web app</button>
+                                    <button class="my_plan d-none d-lg-inline">Boolean mobile app</button>
+                                </div>
+                                
+                            </div>
+                            
+    
+                        </div>
+                     
                     
                 </section>
 
