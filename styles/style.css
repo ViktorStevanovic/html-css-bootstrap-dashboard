@@ -3,10 +3,10 @@
 aside{
     background-color: #0E263C;
     color: white;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 75px);
 }
 header{
-    height: 70px;
+    height: 75px;
 }
 
 
@@ -35,4 +35,13 @@ header{
     border-radius: .75rem;
     vertical-align: text-bottom;
     padding: 0 10px;
+}
+
+.my_main-content{
+    background-color: #F8F9FA;
+}
+
+table img{
+    height: 25px;
+    width: 25px;
 }

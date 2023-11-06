@@ -13,10 +13,10 @@
     <title>Bootstrap dashboard</title>
 </head>
 <body>
-    <header>
+    <header class="d-flex align-items-center">
         
-      <div class="container-fluid p-0">
-            <div class="row">
+      <div class="container-fluid ">
+            <div class="row mx-0">
 
                 <nav class="navbar p-0">
                         <div class="col-1 d-lg-none">
@@ -24,27 +24,27 @@
                                 <img src=".//img/mobile-logo.png" alt="Boolean mobile-logo" class="img-fluid">
                             </a>
                         </div>
-                        <div class="col-2 d-none d-lg-flex justify-content-center">
+                        <div class="col-1 d-none d-lg-flex justify-content-center">
                             <a class="navbar-brand" href="#">
                                 <img src="./img/logo.svg" alt="Boolean mobile-logo" class="img-fluid">
                             </a>
                         </div>
                         
-                        <div class="col-10 col-lg-8">
+                        <div class="col-10">
                             <div class="my_searchbar d-flex justify-content-center align-items-center">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                                 <input type="text" class="form-control form-input" placeholder="Prova a cercare: Lezioni di Laravel">
                             </div>
                         </div>
         
-                        <div class="col-1 col-lg-2 d-flex justify-content-between px-3 gap-4">
+                        <div class="col-1 d-flex justify-content-between px-3 gap-4">
                             <i class="fa-solid fa-list d-none d-lg-flex"></i>
                             <i class="fa-solid fa-circle-question d-none d-lg-flex"></i>
                             <i class="fa-solid fa-ellipsis-vertical d-none d-lg-flex"></i>
                             <i class="fa-solid fa-bell"></i>
                         </div>
                 </nav>       
-                    
+
            </div>
               
          </div>
@@ -52,9 +52,9 @@
     </header>
 
     <main>
-        <section class="container-fluid p-0">
-            <div class="row">
-                <aside class="col-1 col-lg-2 d-flex flex-column align-items-center justify-content-between pb-3 pt-4 px-lg-0 px-xxl-3 fs-5">
+        <section class="container-fluid">
+            <div class="row my-0">
+                <aside class="col-1 d-flex flex-column align-items-center justify-content-between pb-3 pt-4 px-lg-0 px-xxl-3 fs-5">
                     <div class="my_top-aside d-flex flex-column gap-4 align-items-center">
                         <p class="m-0"><i class="fa-solid fa-house"></i><span class="ms-3 d-none d-lg-inline">Home</span></p>
                         <p class="m-0"><i class="fa-solid fa-chart-simple"></i><span class="ms-3 d-none d-lg-inline">Stats</span></p>
@@ -65,24 +65,185 @@
                     </div>
                 </aside>
 
-                <section class="col-11 col-lg-10 p-0">
-                   
-                        <div class="col-12 bg-primary p-2 text-light">
-                            <div class="col-12 col-md-4 col-lg-8">
-                                <h1 class="d-inline">Boolean</h1> <button class="my_plan">Piano blaze</button>
-                                <div class="plans_container">
-                                    <button class="my_plan ">3 app</button>
-                                    <i class="fa-solid fa-angles-right"></i>
-                                    <button class="my_plan d-lg-none">+</button>
-                                    <button class="my_plan d-none d-lg-inline">Boolean mobile app</button>
-                                    <button class="my_plan d-none d-lg-inline">Boolean web app</button>
-                                    <button class="my_plan d-none d-lg-inline">Boolean mobile app</button>
-                                </div>
-                                
-                            </div>
-                            
+                <section class="col-11 p-0">
+                        <!--Main content HEADER-->
+                        <div class="col-12 bg-primary p-3 text-light">
+                            <div class="row">
+                                <div class="col-12 col-md-4 col-lg-6 px-1 py-2">
+                                    <h1 class="d-inline">Boolean</h1> <button class="my_plan">Piano blaze</button>
     
+                                    <div class="plans_container mt-2">
+                                        <button class="my_plan ">3 app</button>
+                                        <i class="fa-solid fa-angles-right"></i>
+                                        <button class="my_plan d-lg-none">+</button>
+                                        <button class="my_plan d-none d-lg-inline">Boolean mobile app</button>
+                                        <button class="my_plan d-none d-lg-inline">Boolean web app</button>
+                                        <button class="my_plan d-none d-lg-inline">Boolean blog app</button>
+                                    </div>        
+    
+                                </div>
+                        
+                                <div class="col-12 col-md-4 col-lg-3">
+                                    <p>Studenti online negli ultimi 30 minuti</h2>
+                                    <h2>125</h2>
+                                </div>
+
+                                <div class="col-12 col-md-4 col-lg-3 text-lg-center">
+                                    <p>Nuovo Studente <i class="fa-regular fa-square-plus fa-2x align-middle ms-3"></i></p>
+                                </div>
+                            </div>                         
                         </div>
+
+                        <!--MAIN CONTENT CARDS-->
+                        <section class="my_main-content p-3">
+                            <div class="row">
+                                <!--Prossime classi-->
+                                <div class="col-12 col-lg-8">
+                                    <div class="card">
+                                        <div class="card-header">
+                                          <h2>Prossime classi</h2>
+                                        </div>
+                                        <table class="table align-middle mb-0">
+                                            <thead>
+                                              <tr>
+                                                <th colspan="5">Nome</th>
+                                                <th>Data inizio</th>
+                                                <th>ROI</th>
+                                                <th>Stato</th>
+                                                <th>Azioni</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td><img src="./img/class-avatar.jpg" alt="table-img" class="img-fluid"> Classe 75</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>15 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td><button class="btn bg-success text-light">done</button></td>
+                                                <td>
+                                                    <button class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                                                    <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td><img src="./img/class-avatar.jpg" alt="table-img" class="img-fluid"> Classe 75</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>15 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td><button class="btn bg-success text-light">done</button></td>
+                                                <td>
+                                                    <button class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                                                    <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td><img src="./img/class-avatar.jpg" alt="table-img" class="img-fluid"> Classe 75</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>15 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td><button class="btn bg-success text-light">done</button></td>
+                                                <td>
+                                                    <button class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                                                    <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td><img src="./img/class-avatar.jpg" alt="table-img" class="img-fluid"> Classe 75</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>15 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td><button class="btn bg-success text-light">done</button></td>
+                                                <td>
+                                                    <button class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                                                    <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td><img src="./img/class-avatar.jpg" alt="table-img" class="img-fluid"> Classe 75</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>15 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td><button class="btn bg-success text-light">done</button></td>
+                                                <td>
+                                                    <button class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                                                    <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td><img src="./img/class-avatar.jpg" alt="table-img" class="img-fluid"> Classe 75</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>15 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td><button class="btn bg-success text-light">done</button></td>
+                                                <td>
+                                                    <button class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                                                    <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td><img src="./img/class-avatar.jpg" alt="table-img" class="img-fluid"> Classe 75</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>15 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td><button class="btn bg-success text-light">done</button></td>
+                                                <td>
+                                                    <button class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                                                    <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td><img src="./img/class-avatar.jpg" alt="table-img" class="img-fluid"> Classe 75</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>15 Febbraio 2021</td>
+                                                <td>20%</td>
+                                                <td><button class="btn bg-success text-light">done</button></td>
+                                                <td>
+                                                    <button class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                                                    <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                              </tr>
+                                              
+                                            </tbody>
+                                          </table>
+                                      </div>
+                                </div>
+    
+                                <!--F.A.Q.-->
+                                <div class="col-12 col-lg-8"></div>
+    
+                                <!--To do-->
+                                <div class="col-12 col-lg-4"></div>
+    
+                                <!--Grafico-->
+                                <div class="col-12 col-lg-8"></div>
+                            </div>
+                        </section>
+                        
+
                      
                     
                 </section>
