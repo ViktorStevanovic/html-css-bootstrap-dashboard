@@ -1,0 +1,27 @@
+
+
+aside{
+    height: calc(100vh - 96px);
+    background-color: #0E263C;
+    color: white;
+}
+nav{
+    height: 70px;
+}
+aside{
+    height: calc(100vh - 70px);
+}
+
+.my_searchbar{
+    background-color: #E5E5E5;
+    height: 60px;
+    border-radius: .5rem;
+}
+
+.my_searchbar input{
+    background-color: transparent;
+}
+
+.my_searchbar i{
+    margin-left: 12px;
+}
