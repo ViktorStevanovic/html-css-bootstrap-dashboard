@@ -8,7 +8,16 @@ aside{
 
 }
 
+li{
+    list-style: none;
+    transition: all .5s;
+    cursor: pointer;
+}
 
+tr{
+    cursor: pointer;
+    transition: all .5s;
+}
 
 header{
     height: 75px;
@@ -59,6 +68,20 @@ table img{
 .offcanvas{
     width: 100% !important;
 }
+
+
+.my_top-aside li:hover{
+    background-color: lightgray;
+}
+.my_bot-aside li:hover{
+    background-color: lightgray;
+}
+
+tr:hover{
+    background-color: lightgray;
+}
+
+
 
 @media all and (min-width: 996px) {
     .offcanvas{
